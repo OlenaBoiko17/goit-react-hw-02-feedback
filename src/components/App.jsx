@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import FeedbackOptions from "./Cafe/FeedbackOptions";
 import Notification from "./Cafe/Notification";
 import Section from "./Cafe/Section";
-import Statistics from "./Cafe/Statisyics";
+import Statistics from "./Cafe/Statistics";
 
 import { DivMain } from "./Cafe.expreso.styled";
 
