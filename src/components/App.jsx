@@ -6,23 +6,24 @@ import Notification from "./Cafe/Notification";
 import Section from "./Cafe/Section";
 import Statistics from "./Cafe/Statistics";
 
-import { DivMain } from "./Cafe.expreso.styled";
+import { DivMain } from "./Cafe/expreso.styled";
 
 
 class App extends Component {
+
   state = {
     good: 0,
     neutral: 0,
     bad: 0
   }
-};  
+ 
 
 
 countTotalFeedback = () => {
   const { good, neutral, bad} = this.state;
   const totalVoice = good + neutral + bad;
   return totalVoice;
-}
+};
 
 
 countPositiveFeedbackPercentage = () => Math.round((this.state.good / this.countTotalFeedback()) * 100);
@@ -59,8 +60,7 @@ render() {
       </Section>
     </DivMain>
   );
-};
-
+}
+}; 
 
 export default App;
-
